@@ -1,5 +1,6 @@
 # Todo App for Vue.js
 Vue.jsでTodoアプリを作ってみよう
+デモは[こちら](https://daikikojima.github.io/vue-memo/)
 ## 概要
 Web meetup #2のハンズオン用の素材となります。
 
