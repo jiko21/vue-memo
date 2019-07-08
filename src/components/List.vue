@@ -1,5 +1,8 @@
 <template>
   <div class="list">
+    <!-- ここがリストのタイルになります-->
+    <div class="todo-card">
+    </div>
   </div>
 </template>
 <script>
