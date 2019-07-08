@@ -1,8 +1,19 @@
 <template>
   <div class="list">
+    <div class="todo-card" v-for="(todo, i) in todos" :key="i">
+      <h2>{{todo}}</h2>
+      <button @click="remove(i)" class="danger">delete</button>
+    </div>
   </div>
 </template>
 <script>
+export default {
+  name: 'List',
+  props: [
+    'todos',
+    'remove'
+  ],
+}
 </script>
 <style scoped>
 .todo-card {
