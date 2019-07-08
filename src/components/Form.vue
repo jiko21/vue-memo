@@ -1,8 +1,20 @@
 <template>
   <div class="form">
+    <input class="radius" type="text"/>
+    <button class="radius">Add</button>
   </div>
 </template>
 <script>
+export default {
+  name: 'Form',
+  props: [],
+  data() {
+    return {
+    }
+  },
+  methods: {
+  }
+}
 </script>
 <style scoped>
 .form {
