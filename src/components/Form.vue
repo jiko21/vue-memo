@@ -1,8 +1,27 @@
 <template>
   <div class="form">
+    <input class="radius" v-model="text" type="text"/>
+    <button class="radius" @click="submit">Add</button>
   </div>
 </template>
 <script>
+export default {
+  name: "Form",
+  props: [
+    'add'
+  ],
+  data() {
+    return {
+      text: '',
+    };
+  },
+  methods: {
+    submit() {
+      this.add(this.text);
+      this.text = '';
+    }
+  }
+}
 </script>
 <style scoped>
 .form {
